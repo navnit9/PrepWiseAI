@@ -1,18 +1,16 @@
-🚀 PrepWise AI
+# React + Vite
 
-PrepWise AI is a full-stack AI-powered interview preparation platform built using the MERN stack. The application helps students prepare for technical interviews through AI-generated questions, timed mock tests, and detailed performance analytics. It simulates real interview environments and provides personalized feedback to improve confidence and readiness.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-🛠 Tech Stack
-	•	MongoDB
-	•	Express.js
-	•	React (Vite)
-	•	Node.js
-	•	JWT Authentication
-	•	OpenAI API (for AI-based question generation)
+Currently, two official plugins are available:
 
-✨ Features
-	•	Secure authentication system
-	•	AI-based interview question generation
-	•	Timed mock tests
-	•	Performance tracking & analytics
-	•	Role-based access control
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## React Compiler
+
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
