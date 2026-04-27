@@ -1,0 +1,141 @@
+.result-page {
+  padding: 4rem 0;
+}
+
+.result-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.result-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.result-header p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+}
+
+.score-overview {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto 3rem;
+}
+
+.score-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem !important;
+}
+
+.score-circle {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 8px solid var(--accent-purple-end);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+  box-shadow: 0 0 30px rgba(168, 85, 247, 0.2);
+}
+
+.score-value {
+  font-size: 3.5rem;
+  font-weight: 700;
+  font-family: 'Sora', sans-serif;
+  color: var(--text-primary);
+  display: flex;
+  align-items: baseline;
+}
+
+.score-value span {
+  font-size: 1.5rem;
+  color: var(--text-secondary);
+}
+
+.score-message {
+  font-weight: 500;
+}
+
+.score-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.detail-card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem !important;
+}
+
+.detail-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.detail-icon.correct {
+  background: rgba(16, 185, 129, 0.1);
+  color: #10B981;
+}
+
+.detail-icon.wrong {
+  background: rgba(255, 59, 59, 0.1);
+  color: var(--accent-red);
+}
+
+.detail-icon.time {
+  background: rgba(245, 158, 11, 0.1);
+  color: #F59E0B;
+}
+
+.detail-info h4 {
+  margin: 0 0 0.25rem 0;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.detail-value {
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: 'Sora', sans-serif;
+}
+
+.detail-value.text-sm {
+  font-size: 1.1rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.result-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .score-overview {
+    grid-template-columns: 1fr;
+  }
+  .result-actions {
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .result-actions a {
+    width: 100%;
+  }
+  .result-actions button {
+    width: 100%;
+  }
+}
